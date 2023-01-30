@@ -15,7 +15,7 @@ function App() {
 		</Routes>
 	);
 	return (
-		<BrowserRouter>{ routes }</BrowserRouter>
+		<BrowserRouter basename='/markdown-reader'>{ routes }</BrowserRouter>
 	);
 }
 
