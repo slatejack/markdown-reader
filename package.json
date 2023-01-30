@@ -2,6 +2,7 @@
   "name": "markdown-reader",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://slatejack.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -21,7 +22,8 @@
     "start": "craco start",
     "build": "craco build",
     "prepare": "husky install",
-    "lint": "eslint --config .eslintrc.js --ext .jsx,.js ./ --quiet --fix"
+    "lint": "eslint --config .eslintrc.js --ext .jsx,.js ./ --quiet --fix",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,12 +48,13 @@
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.33.0",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0"
   },
   "lint-staged": {
-      "src/**/*.{js,jsx,ts,tsx}": [
-        "npm run lint"
-      ]
-    }
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run lint"
+    ]
+  }
 }
